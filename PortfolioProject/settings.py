@@ -30,6 +30,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Portfolio_App',
     'django_cleanup.apps.CleanupConfig',
+  
+    
+    
 ]
 
 MIDDLEWARE = [
@@ -114,8 +117,17 @@ STATICFILES_DIRS = [STATIC_DIR,]
 
 #MEDIA_DIR
 
-MEDIA_ROOT= MEDIA_DIR
+
 MEDIA_URL = '/media/'
 
 #SMTP System
+
+#### settings.py
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'Zahedhasan.CS@gmail.com'
+EMAIL_HOST_PASSWORD = 'yalobdtpekjvviap'
+
+#admin
 
